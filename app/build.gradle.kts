@@ -68,7 +68,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "io.github.oixcloud3rd"
+        applicationId = "io.github.oixcloud3rd.sfa"
         minSdk = 24
         targetSdk = 37
         versionCode = getVersionProps("VERSION_CODE").toInt()
