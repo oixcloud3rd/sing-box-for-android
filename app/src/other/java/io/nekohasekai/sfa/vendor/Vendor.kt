@@ -97,7 +97,8 @@ object Vendor : VendorInterface {
 
     override val hasCustomUpdate = true
 
-    override val updateSources = listOf(UpdateSource.GITHUB, UpdateSource.FDROID)
+    // Downstream customization: This project is not published on F-Droid.
+    override val updateSources = listOf(UpdateSource.GITHUB)
 
     override fun checkUpdateAsync(): UpdateInfo? = when (UpdateSource.fromString(Settings.updateSource)) {
         UpdateSource.FDROID -> checkFDroidUpdate(Application.application)
