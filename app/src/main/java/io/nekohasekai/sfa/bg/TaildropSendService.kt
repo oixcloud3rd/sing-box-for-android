@@ -129,7 +129,7 @@ class TaildropSendService : Service() {
     }
 
     companion object {
-        const val ACTION_STOP = "io.nekohasekai.sfa.action.TAILDROP_SEND_STOP"
+        const val ACTION_STOP = "com.akinokaede.oixcloud3rd.sfa.action.TAILDROP_SEND_STOP"
         private const val NOTIFICATION_ID = 3
         private const val NOTIFICATION_CHANNEL = "taildrop"
 
